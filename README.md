@@ -1,6 +1,6 @@
 # Mochachino
 
-The project creates some simple affordances for browser testing with the [Mocha javascript testing framework](http://visionmedia.github.com/mocha) to aid in browser testing.
+This project creates some simple affordances for browser testing with the [Mocha javascript testing framework](http://visionmedia.github.com/mocha).
 
 This is very much a work-in-progress (like not working yet work in progress), but some initial goals include:
 
