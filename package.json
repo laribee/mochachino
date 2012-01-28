@@ -1,0 +1,18 @@
+{
+  "author": "David Laribee <laribee@gmail.com> (http://laribee.com/)",
+  "name": "mochachino",
+  "description": "A handy little web server for in-browser mocha tests.",
+  "version": "0.0.0",
+  "homepage": "http://github.com/laribee/mochachino",
+  "repository": { "url" : "" },
+  "bin": {"mochachino" : "./bin/mochachino"},
+  "engines": { "node" : "~0.6.8" },
+  "dependencies": {
+    "mocha": "=0.10.2",
+    "express": "=2.5.6",
+    "jade": "=0.20.0",
+    "coffee-script": "=1.2.0"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
