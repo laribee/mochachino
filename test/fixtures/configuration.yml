@@ -1,0 +1,8 @@
+---
+sources:
+  - app.js
+  - utility.coffee
+  - lib/**/*.js
+tests:
+  - test/**/*.js
+  - test/**/*.coffee
