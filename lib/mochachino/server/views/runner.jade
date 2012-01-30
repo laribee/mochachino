@@ -1,0 +1,5 @@
+extends layout
+
+block src_scripts
+  - for(file in files)
+    script(src=file,type="javascript")
