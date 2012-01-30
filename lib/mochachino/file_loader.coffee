@@ -2,12 +2,8 @@ class module.exports.FileLoader
 
   constructor: (@configuration) ->
 
-  getSourceFiles: -> [
-    { path: 'lib/blah.js' },
-    { path: 'lib/foo.coffee' }
-  ]
+  getSourceFiles: ->
+    @configuration.sourceFiles()
 
-  getTestFiles: -> [
-    { path: 'test/blah_spec.coffee' },
-    { path: 'test/foo_spec.coffee' },
-  ]
+  getTestFiles: ->
+    @configuration.testFiles()
