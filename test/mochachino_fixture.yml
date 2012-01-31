@@ -1,0 +1,4 @@
+---
+tests:
+  - test/**/*.js
+  - test/**/*.coffee

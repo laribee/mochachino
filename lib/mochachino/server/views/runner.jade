@@ -1,9 +1,6 @@
 extends layout
 
-block source_scripts
-  != write_script_tags(sourceFiles)
-
-block test_scripts
+block tests
   != write_script_tags(testFiles)
 
 block content

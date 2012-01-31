@@ -1,5 +1,3 @@
 ---
-sources:
-  - lib/test.js
 tests:
-  - test/test_specs.js
+  - test/browser/test_specs.js

@@ -1,15 +1,7 @@
-require('js-yaml')
 path = require('path')
+require('js-yaml')
 
-CONFIG_FILE_PATH = path.join(process.cwd(), 'test', 'mochachino.yml')
+DEFAULT_CONFIG = require(path.join(process.cwd(), 'test', 'mochachino.yml'))
 
-module.exports.sourceFiles = (configFilePath = CONFIG_FILE_PATH) ->
-  config = readConfigFile(configFilePath)
-  config[0]['sources']
-
-module.exports.testFiles = (configFilePath = CONFIG_FILE_PATH) ->
-  config = readConfigFile(configFilePath)
+module.exports.testFiles = (config = DEFAULT_CONFIG) ->
   config[0]['tests']
-
-readConfigFile = (path) ->
-  require(path)
