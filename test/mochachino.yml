@@ -1,8 +1,5 @@
 ---
 sources:
-  - app.js
-  - utility.coffee
-  - lib/**/*.js
+  - lib/test.js
 tests:
-  - test/**/*.js
-  - test/**/*.coffee
+  - test/test_specs.js

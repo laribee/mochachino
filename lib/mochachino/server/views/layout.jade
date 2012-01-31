@@ -1,7 +1,28 @@
 !!! 5
 html
   head
+
     title Mocha Test Results
-    block src_scripts
+    link(rel="stylesheet", href="/node_modules/mocha/mocha.css")
+    script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+    script(type="text/javascript", src="/node_modules/mocha/mocha.js")
+    script(type="text/javascript", src="/node_modules/chai/chai.js")
+
+    script
+      mocha.setup('bdd');
+      var expect = chai.expect;
+      function load(path) {
+        $('head').append($("<script src='" + path + "'>"));
+      }
+
+    block test_scripts
+
+    script
+      $(function() { mocha.run() });
+
   body
+
+    block content
+
+    div#mocha
 

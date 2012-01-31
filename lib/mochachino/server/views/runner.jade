@@ -1,5 +1,10 @@
 extends layout
 
-block src_scripts
-  - for(file in files)
-    script(src=file,type="javascript")
+block source_scripts
+  != write_script_tags(sourceFiles)
+
+block test_scripts
+  != write_script_tags(testFiles)
+
+block content
+  h1 Test Results
